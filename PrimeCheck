@@ -1,0 +1,9 @@
+# This program takes an input of an integer, then finds out if it is prime or not.
+# The program then outputs a message to the user, telling them about whether the number is prime or composite, 
+# as well as the list of factors if the number is composite.
+
+
+def get_input(query = "Enter an input:")
+  return(input(query)
+
+number = get_input("Enter the number you wish to check:")
