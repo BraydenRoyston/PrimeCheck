@@ -3,22 +3,23 @@
 # as well as the list of factors if the number is composite.
 
 
-def get_input(query = "Enter an input:")
-  return(input(query)
+def get_input(query = "enter a number:"):
+    return input(query)
 
 number = int(get_input("Enter the number you wish to check:"))
 
 def primeCheck(number):
-  factors = []
-  if number == 0 :
-    return("Zero is an invalid input. This number is neither prime nor non-prime.")
-  else for x in range(1, number+1)
-    if number % x == 0:
-      factors += [x]
-  if len(facotrs) > 2"
-    return("This number is composite! Here is its list of factors:" + str(factors))
-  else:
-    return("This number is prime (it is only divisible aby itself and 1).")
-    
+    factors = []
+    if number == 0:
+        return("Zero is an invalid input. This number is neither prime nor non-prime.")
+    else:
+        for x in range(1, number+1):
+            if number % x == 0:
+                factors += [x]
+    if len(factors) > 2:
+        return("This number is not prime! Here is its list of factors:" + str(factors))
+    else:
+        return("This number is prime (it is only divisible by itself and 1).")
+
 print(primeCheck(number))
   
