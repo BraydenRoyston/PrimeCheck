@@ -6,4 +6,7 @@
 def get_input(query = "Enter an input:")
   return(input(query)
 
-number = get_input("Enter the number you wish to check:")
+number = int(get_input("Enter the number you wish to check:"))
+
+def primeCheck(number):
+  factors = []
